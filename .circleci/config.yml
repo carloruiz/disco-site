@@ -6,5 +6,6 @@ jobs:
     working_directory: /go/src/github.com/carloruiz/disco-site.git
     steps:
         - checkout
+        - run: go get
         - run: go test -v            
         
